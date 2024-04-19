@@ -4,19 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="397311b6-6188-4a15-90e6-8d52ba02289b" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Comentario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/EstadoNegocio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/EstadoRegistro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/HistorialRevision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Horario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Moderador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Negocio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/TipoNegocio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Ubicacion.java" afterDir="false" />
+    <list default="true" id="397311b6-6188-4a15-90e6-8d52ba02289b" name="Changes" comment="modificacion de tablas y repo con dto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/AutenticacionControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/ClienteControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/ImagenesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/ModeradorControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/VisitanteControlador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/controladores/excepciones/ExcepcionesGlobales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/JWT_DTO/MensajeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/JWT_DTO/TokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/LoginDTO/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/calificacionDTO/ActualizarCalificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/calificacionDTO/AgregarCalificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/calificacionDTO/DetalleCalificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/calificacionDTO/ItemCalificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/calificacionDTO/ResponderCalificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/ActualizarClienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/AgregarNegocioFavoritosDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/CambioPasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/DetalleClienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/ItemClienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/clienteDTO/RegistroClienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/emailDTO/EmailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/eventoDTO/ActualizarEventoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/eventoDTO/AgregarEventoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/eventoDTO/DetalleEventoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/eventoDTO/ItemEventoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/excepcionDTO/ValidacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/imagenDTO/ImagenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/moderadorDTO/ActualizarModeradorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/negocioDTO/ActualizarNegocioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/negocioDTO/AgregarNegocioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/negocioDTO/DetalleNegocioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/negocioDTO/ItemNegocioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/negocioDTO/RegistrarRevisionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/opinionDTO/DetalleOpinionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/opinionDTO/ItemOpinionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/opinionDTO/OpinarPublicacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/opinionDTO/ReaccionarOpinionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/publicacionDTO/ActualizarPublicacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/publicacionDTO/AgregarPublicacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/publicacionDTO/ItemPublicacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/publicacionDTO/ReaccionarPublicacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/revisionDTO/AgregarRevisionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/revisionDTO/DetalleRevisionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/dto/revisionDTO/ItemRevisionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Calificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Evento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Moderador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Negocio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Opinion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Publicacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/documentos/Revision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/enumeraciones/CategoriaNegocio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/enumeraciones/EstadoEvento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/enumeraciones/EstadoNegocio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/enumeraciones/EstadoRegistro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/enumeraciones/TipoEvento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/excepciones/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/CalificacionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/ClienteRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/EventoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/ModeradorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/NegocioRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/OpinionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/PublicacionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/repositorios/RevisionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/AutenticacionServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/CalificacionServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/ClienteServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/EmailServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/EventoServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/ImagenesServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/ModeradorServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/NegocioServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/OpinionServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/PublicacionServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/impl/RevisionServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/AutenticacionServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/CalificacionServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/ClienteServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/EmailServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/EventoServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/ImagenesServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/ModeradorServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/NegocioServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/OpinionServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/PublicacionServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/servicios/interfaces/RevisionServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/utils/FiltroToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/utils/JWTUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/AutenticacionServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/CalificacionServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/ClienteServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/EmailServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/EventoServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/ImagenesServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/ModeradorServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/NegocioServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/OpinionServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/PublicacionServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/edu/uniquindio/uniLocal/test/RevisionServicioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/dataset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Comentario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Cuenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Cuenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/EstadoNegocio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/EstadoRegistro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/HistorialRevision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Horario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Moderador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Negocio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/TipoNegocio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Ubicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/uniLocal/modelo/Ubicacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aplication.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +143,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="de488ecb-4c28-40c5-a4ae-42cdacfed74c" />
+        <option name="url" value="https://github.com/JOMAROTO/uniLocal" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,18 +174,108 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/JOMAR/IdeaProjects/uniLocal/src/main/java/co/edu/uniquindio/uniLocal/modelo",
+    "last_opened_file_path": "C:/Users/JOMAR/IdeaProjects/uniLocal/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JOMAR\IdeaProjects\uniLocal\src\test\resources" />
+      <recent name="C:\Users\JOMAR\IdeaProjects\uniLocal\src\test\java\co\edu\uniquindio\uniLocal\test" />
+      <recent name="C:\Users\JOMAR\IdeaProjects\uniLocal\src\test\java" />
+      <recent name="C:\Users\JOMAR\IdeaProjects\uniLocal\src\main\java\co\edu\uniquindio\uniLocal" />
       <recent name="C:\Users\JOMAR\IdeaProjects\uniLocal\src\main\java\co\edu\uniquindio\uniLocal\modelo" />
     </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'uniLocal.test'">
+    <configuration name="CalificacionServicioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;co.edu.uniquindio.uniLocal.test.CalificacionServicioTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ClienteServicioTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;co.edu.uniquindio.uniLocal.test.ClienteServicioTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'uniLocal.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UniLocalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="uniLocal.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.uniLocal.UniLocalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'uniLocal.test'" />
+        <item itemvalue="Gradle.CalificacionServicioTest" />
+        <item itemvalue="Gradle.ClienteServicioTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +285,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713454758997</updated>
-      <workItem from="1713454760322" duration="1887000" />
+      <workItem from="1713454760322" duration="6043000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1713455820058</created>
@@ -87,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713455820058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tablas base de datos">
+      <created>1713464482161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713464482161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +309,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="tablas base de datos" />
+    <MESSAGE value="modificacion de tablas y repo con dto" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificacion de tablas y repo con dto" />
   </component>
 </project>

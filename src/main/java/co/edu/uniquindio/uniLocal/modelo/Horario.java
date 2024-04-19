@@ -1,9 +1,16 @@
 package co.edu.uniquindio.uniLocal.modelo;
 
-import java.time.LocalTime;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Horario {
-    private LocalTime horaFin;
-    private LocalTime horaInicio;
-    private String dia;
+    private String horaApertura;
+    private String horaCierre;
+    private String diaSemana;
 }

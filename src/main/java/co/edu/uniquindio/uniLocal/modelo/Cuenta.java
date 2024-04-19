@@ -1,22 +1,20 @@
 package co.edu.uniquindio.uniLocal.modelo;
 
-import lombok.*;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import co.edu.uniquindio.uniLocal.modelo.enumeraciones.EstadoRegistro;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import java.io.Serializable;
-
-@Document("cuentas")
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
-@ToString
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Cuenta implements Serializable{
-    @Id
-    @EqualsAndHashCode.Include
-    private String email;
+public class Cuenta {
     private String nombre;
+    private String fotoPerfil;
     private String password;
-    private EstadoRegistro estado;
+    private String email;
+    private EstadoRegistro estadoRegistro;
+
 }
